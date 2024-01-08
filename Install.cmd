@@ -22,9 +22,9 @@ echo [1] Yes       [2] No
 choice /c:12 /n /m "Enter Your Choice: "
 
 if errorlevel 2 exit /b
-if errorlevel 1 goto :StartVi
+if errorlevel 1 goto :StartEn
 
-:StartVi
+:StartEn
 Title Installing Micosoft 365 apps for Enterprise...
 Echo Installing...
 setup.exe /configure Configuration-en.xml
